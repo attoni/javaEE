@@ -12,16 +12,15 @@ import com.example.demo.service.CarMaintanceServiceMemImp;
 
 @Controller
 public class TestController {
-@Autowired
-private CarMaintanceServiceMemImp service;
+	@Autowired
+	private CarMaintanceServiceMemImp service;
 
-@RequestMapping("/test")
-@ResponseBody
-public List<Owner> getMessage() {
-	
-	return service.findOwners();
-	
-}
-	
-	
+	@RequestMapping("/test")
+	@ResponseBody
+	public List<Owner> getMessage() {
+
+		return service.findOwners();
+
+	}
+
 }
